@@ -14,10 +14,8 @@ public class SecurityConfig {
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
             httpSecurity.authorizeRequests().anyRequest().authenticated();
-            httpSecurity.formLogin();
             //SecurityFilterChain에 추가하기
             httpSecurity.apply(new CustomSecurityConfigurer().setFlag(false)); //apply를 통하여 SecurityConfigurer를 추가한다.
             return httpSecurity.build();
-
     }
 }
