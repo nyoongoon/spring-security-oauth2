@@ -1,4 +1,4 @@
-package io.security.oauth2.springsecurityoauth2;
+package io.security.oauth2.springsecurityoauth2.security_example;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.AuthenticationException;
